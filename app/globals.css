@@ -40,3 +40,58 @@ a {
     color-scheme: dark;
   }
 }
+
+
+
+/* my css */
+
+
+.navbar-bg-color{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px !important;
+  /* border: 1px solid #8080804d; */
+  background: #f8f5f5;
+  padding: 5px !important;
+}
+
+
+.home-text{
+  position: absolute !important;
+  top: 11rem !important;  
+  /* width: 34rem !important; */
+  color: #fff !important;
+  padding: 15px 36px !important;
+  font-weight: 100 !important;
+}
+
+
+.search-form{
+  max-width: 1000px;
+  position: relative;
+  top: -17rem;
+}
+
+
+.cards-text-dest{
+  position: relative !important;
+    top: -74px !important;
+    background: #212529 !important;
+    color: #fff !important;
+}
+
+.destination-text{
+  text-align: center;
+    margin-top: -6rem;
+}
+
+.card{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px !important;
+}
+
+.toll-free{
+  background: #1a426a !important;
+    border-radius: 0rem !important;
+    border: none !important;
+}
+
+/* my end */
+
