@@ -45,11 +45,13 @@ a {
 
 /* my css */
 
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+}
 
 
 
-
-.navbar-bg-color{
+.navbar-bg-color {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px !important;
   /* border: 1px solid #8080804d; */
   background: #f8f5f5;
@@ -57,9 +59,9 @@ a {
 }
 
 
-.home-text{
+.home-text {
   position: absolute !important;
-  top: 11rem !important;  
+  top: 11rem !important;
   /* width: 34rem !important; */
   color: #fff !important;
   padding: 15px 36px !important;
@@ -67,37 +69,37 @@ a {
 }
 
 
-.search-form{
+.search-form {
   max-width: 1000px;
   position: relative;
   top: -17rem;
 }
 
 
-.cards-text-dest{
+.cards-text-dest {
   position: relative !important;
-    top: -74px !important;
-    background: #212529 !important;
-    color: #fff !important;
+  top: -74px !important;
+  background: #212529 !important;
+  color: #fff !important;
 }
 
-.destination-text{
+.destination-text {
   text-align: center;
-    margin-top: -6rem;
+  margin-top: -6rem;
 }
 
-.card{
+.card {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px !important;
 }
 
-.toll-free{
+.toll-free {
   background: #1a426a !important;
-    border-radius: 0rem !important;
-    border: none !important;
+  border-radius: 0rem !important;
+  border: none !important;
 }
 
 
-.footer-logo{
+.footer-logo {
   background-color: #fff;
   padding: 1px 13px 2px 12px;
 }
@@ -105,4 +107,3 @@ a {
 
 
 /* my end */
-
