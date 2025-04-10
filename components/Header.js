@@ -17,10 +17,10 @@ const Header = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mx-auto">
-            <Nav.Link as={Link} href="/" className="mx-2 fw-medium">Home</Nav.Link>
-            <Nav.Link as={Link} href="/about-us" className="mx-2 fw-medium">About Us</Nav.Link>
-            <Nav.Link as={Link} href="/blog" className="mx-2 fw-medium">Blog</Nav.Link>
-            <Nav.Link as={Link} href="/contact-us" className="mx-2 fw-medium">Contact Us</Nav.Link>
+           <a  href="/" className="mx-2 fw-medium text-decoration-none text-dark">Home</a>
+           <a  href="/about-us" className="mx-2 fw-medium text-decoration-none text-dark">About Us</a>
+           <a  href="/blog" className="mx-2 fw-medium text-decoration-none text-dark">Blog</a>
+           <a  href="/contact-us" className="mx-2 fw-medium text-decoration-none text-dark">Contact Us</a>
           </Nav>
 
           {/* Right-Aligned Button */}
