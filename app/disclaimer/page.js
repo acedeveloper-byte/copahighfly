@@ -67,7 +67,7 @@ const Page = () => {
 
            <li className='fs-5 fw-bold'>Contact Information</li>
           <p>
-            Please contact us at XXXX for any questions or concerns regarding this disclaimer.
+            Please contact us at info@copahighfly.com for any questions or concerns regarding this disclaimer.
           </p>
         </ol>
       </Container>

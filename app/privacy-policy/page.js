@@ -71,7 +71,7 @@ const page = () => {
        
            <li className='fs-5 fw-bold'> Contact Us</li>
        
-        <p>If you have any questions or concerns about this Privacy Policy, please contact us at XXXXX.</p>
+        <p>If you have any questions or concerns about this Privacy Policy, please contact us at info@copahighfly.com.</p>
         </ol>
       </Container>
       <Footer />

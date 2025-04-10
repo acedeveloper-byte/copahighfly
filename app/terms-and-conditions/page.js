@@ -49,7 +49,7 @@ const page = () => {
            <h2 className='fs-5 fw-bold'>12. Termination of Use</h2>
         <p>Copahighfly reserves the right to suspend or terminate access to our site and services if violations of these terms are detected. Users who violate these terms may face a ban from accessing our services in the future.</p>
          <h2 className='fs-5 fw-bold'>13. Contact Information</h2>
-        <p>Get in touch with us at XXXX if you have questions or concerns regarding these Terms and Conditions.</p>
+        <p>Get in touch with us at info@copahighfly.com if you have questions or concerns regarding these Terms and Conditions.</p>
         <p>By using Copahighfly services, you accept these terms and conditions. Thank you for choosing Copahighfly for your next travel adventure!</p>   </Container>
       
       <br />
