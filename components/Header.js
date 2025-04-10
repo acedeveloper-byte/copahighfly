@@ -16,15 +16,17 @@ const Header = () => {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="mx-auto">
+          <Nav className="ms-auto ">
            <a  href="/" className="mx-2 fw-medium text-decoration-none text-dark">Home</a>
            <a  href="/about-us" className="mx-2 fw-medium text-decoration-none text-dark">About Us</a>
            <a  href="/blog" className="mx-2 fw-medium text-decoration-none text-dark">Blog</a>
            <a  href="/contact-us" className="mx-2 fw-medium text-decoration-none text-dark">Contact Us</a>
+         
+
           </Nav>
 
           {/* Right-Aligned Button */}
-          <div className="">
+          <div className="ms-5">
             <Link href="tel: +1" >
               <Button variant="primary" className="  toll-free"><FaPhoneVolume /> +1 (111) 0000 111</Button>
             </Link>

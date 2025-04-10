@@ -14,16 +14,16 @@ const Footer = () => {
         <Row>
           {/* About Us */}
           <Col md={4} className="mb-4 text-start">
-            <Image src="/logo/logo.png" alt="Copa High Fly" width={170} height={50} className="mb-2" />
+            <Image src="/logo/logo.png" alt="Copa High Fly" width={170} height={50} className="mb-2 footer-logo" />
             <p>
               At Copahighfly, we believe that everyone should enjoy air travel within their budget. We offer flights to various destinations worldwide at discounted fares. Connect with us to find affordable Copa Airlines flights, and bring your travel dream to reality. Start planning your dream trip today with us!
             </p>
 
             <div className="d-flex gap-3 mt-3">
-              <Link href="#" className="text-white fs-5"><FaFacebookF /></Link>
-              <Link href="#" className="text-white fs-5"><FaXTwitter /></Link>
-              <Link href="#" className="text-white fs-5"><FaInstagram /></Link>
-              <Link href="#" className="text-white fs-5"><FaLinkedinIn /></Link>
+              <a href="#" className="text-white fs-5"><FaFacebookF /></a>
+              <a href="#" className="text-white fs-5"><FaXTwitter /></a>
+              <a href="#" className="text-white fs-5"><FaInstagram /></a>
+              <a href="#" className="text-white fs-5"><FaLinkedinIn /></a>
             </div>
           </Col>
 
@@ -43,17 +43,17 @@ const Footer = () => {
               <Col xs={6}>
                 <h5>Quick Links</h5>
                 <ul className="list-unstyled">
-                  <li><Link href="/" className="text-white text-decoration-none">Home</Link></li>
-                  <li><Link href="/about-us" className="text-white text-decoration-none">About us</Link></li>
-                  <li><Link href="/contact-us" className="text-white text-decoration-none">Contact us</Link></li>
+                  <li><a href="/" className="text-white text-decoration-none">Home</a></li>
+                  <li><a href="/about-us" className="text-white text-decoration-none">About us</a></li>
+                  <li><a href="/contact-us" className="text-white text-decoration-none">Contact us</a></li>
                 </ul>
               </Col>
               <Col xs={6}>
                 <h5>Help Links</h5>
                 <ul className="list-unstyled">
-                  <li><Link href="/privacy-policy" className="text-white text-decoration-none">Privacy Policy</Link></li>
-                  <li><Link href="/terms" className="text-white text-decoration-none">Term & Condition</Link></li>
-                  <li><Link href="/disclaimer" className="text-white text-decoration-none">Disclaimer</Link></li>
+                  <li><a href="/privacy-policy" className="text-white text-decoration-none">Privacy Policy</a></li>
+                  <li><a href="/terms-and-conditions" className="text-white text-decoration-none">Terms & Condition</a></li>
+                  <li><a href="/disclaimer" className="text-white text-decoration-none">Disclaimer</a></li>
                 </ul>
               </Col>
             </Row>
