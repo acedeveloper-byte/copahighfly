@@ -13,8 +13,8 @@ const Page = () => {
 
       <Container className="mt-5 mb-5">
         <div className="text-center mb-4">
-          <p className="text-primary mb-1">OUR BLOG</p>
-          <h3 className="text-capitalize">What You Definitely Want to Know</h3>
+          <p className="text-primary mb-1">OUR BLOGS</p>
+          <h3 className="text-capitalize">What You Want to Know</h3>
         </div>
 
         <Row className="g-4">
