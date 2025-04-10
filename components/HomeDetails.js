@@ -5,18 +5,18 @@ const HomeContent = () => {
   return (
     <div>
       <Container>
-        <h2><strong>Find &amp; Book Cheap Copa Airlines Flights</strong></h2>
+        <h2 className='fs-4 fw-bold'>Find &amp; Book Cheap Copa Airlines Flights</h2>
         <p>Looking for cheap Copa Airlines flights to your favorite destination? Choose Copahighfly for your next booking, and confirm your Copa Airlines booking at discounted fares. We offer great flight deals to help you plan your dream vacation on a budget. With our user-friendly interface and dedicated customer service, booking with us is a breeze. So go ahead, book tickets with us as soon as possible, and have a pocket-friendly trip.</p>
 
-        <h3>About Copa Airlines</h3>
+         <h3 className='fs-4 fw-bold'>About Copa Airlines</h3>
         <p>Copa Airlines was founded on 21 June 1944, but it started its operations on 15 August 1947. It has a fleet size of 103, and flies to 85 destinations. Headquartered in Panama City, Panama, Copa Airlines is the flag carrier of Panama. The main hub of the airline is at Tocumen International Airport. Copa is also a member of Star Alliance.</p>
 
         <p>The airline offers some great discounts on flight tickets; if you are looking for the right deal for your travel plan, book Copa Airlines tickets as soon as possible. These discounts are available on a wide range of flights, including domestic and international routes. Read on to learn the procedure to book flight tickets with this airline.</p>
 
-        <h3>How do I Make a Copa Airlines Booking?</h3>
+         <h3 className='fs-4 fw-bold'>How do I Make a Copa Airlines Booking?</h3>
         <p>If you want to confirm your booking on Copa Airlines, you have multiple ways. The most used way is the airline&rsquo;s official site, which can be accessed at any time of the day. Moreover, you can also call the airline&rsquo;s customer service executives to book your tickets with expert help. Find the different ways to book Copa tickets below.</p>
 
-        <h4>Official Site</h4>
+        <h4 className='fs-5 fw-bold'>Official Site</h4>
         <ul>
           <li >Go to the Copa Airlines official site.</li>
           <li >Enter the requested details in the search engine.</li>
@@ -38,7 +38,7 @@ const HomeContent = () => {
           <li >Confirm your flight booking at low fares.</li>
         </ul>
 
-        <h4>Mobile App</h4>
+        <h4 className='fs-5 fw-bold'>Mobile App</h4>
         <ul>
           <li >Install the Copa Airlines mobile app.</li>
           <li >Locate the search engine.</li>
@@ -51,7 +51,7 @@ const HomeContent = () => {
           <li >Book your flights easily with Copa Airlines.</li>
         </ul>
 
-        <h4>Phone Number</h4>
+        <h4 className='fs-5 fw-bold'>Phone Number</h4>
         <ul>
           <li >Dial the Copa Airlines phone number.</li>
           <li >Select your preferred language.</li>
@@ -68,7 +68,7 @@ const HomeContent = () => {
 
         <p>Either use the online method or connect with Copa Airlines customer service to book your flight tickets with no extra effort. Ensure to fetch the best deal to save extra on your travel expenses.</p>
 
-        <h3>Why is Copa Airlines the Best Choice for Travelers?</h3>
+         <h3 className='fs-4 fw-bold'>Why is Copa Airlines the Best Choice for Travelers?</h3>
         <p>Copa Airlines is one of the most popular airlines, making travelers' journeys fantastic. There are many reasons that make this airline special compared to other airlines.&nbsp;</p>
 
         <ul>
@@ -79,7 +79,7 @@ const HomeContent = () => {
           <li ><strong>Customer-Friendly Airline</strong>: The airline focuses on customer satisfaction and therefore, offers customer-friendly services.</li>
         </ul>
 
-        <h3>How to Manage My Booking on Copa Airlines?</h3>
+         <h3 className='fs-4 fw-bold'>How to Manage My Booking on Copa Airlines?</h3>
         <p>Sometimes you may need to adjust your travel plans after booking your flight tickets. To do the same, you can use the Copa Airlines manage booking option. This option lets you make changes to your booking so you can have a personalized travel experience. The manage booking option allows you to-</p>
 
         <ul>
@@ -99,7 +99,7 @@ const HomeContent = () => {
 
         <p>These changes may require you to pay a small fee. Check out the specific policy to modify your booking without any hassle.</p>
 
-        <h4>Steps to Manage Copa Airlines Booking</h4>
+        <h4 className='fs-5 fw-bold'>Steps to Manage Copa Airlines Booking</h4>
         <ul>
           <li >Open the Copa Airlines official site.</li>
           <li >Click on the &ldquo;My Trips&rdquo; option.</li>
@@ -116,27 +116,27 @@ const HomeContent = () => {
 
         <p>Copa Airlines will send you a confirmation email with all the updated details if necessary.</p>
 
-        <h3>How Can I Change or Cancel My Flight on Copa Airlines?</h3>
+         <h3 className='fs-4 fw-bold'>How Can I Change or Cancel My Flight on Copa Airlines?</h3>
         <p>To change or cancel your flight, you can visit the manage booking section. However, you must go through the Copa Airlines cancellation policy or change flight policy in advance. The policy will help you complete the necessary procedure hassle-free.</p>
 
-        <h4>Online Method</h4>
+        <h4 className='fs-5 fw-bold'>Online Method</h4>
         <p>If you want to cancel or change Copa Airlines flights online, you can use the official site or the mobile app. Navigate to the manage booking section, and complete the cancellation process in no time.&nbsp;</p>
 
-        <h4>Offline Method</h4>
+        <h4 className='fs-5 fw-bold'>Offline Method</h4>
         <p>Travelers can call the airline&rsquo;s phone number to connect with the travel experts. The airline executives will help you with the Copa Airlines change flight process. You can also go to the ticket counter at the airport to seek agents&rsquo; guidance. With the help of experts, you can change or cancel the flight seamlessly.</p>
 
-        <h3>Copa Airlines Baggage Allowance</h3>
+         <h3 className='fs-4 fw-bold'>Copa Airlines Baggage Allowance</h3>
         <p>Booked a flight with Copa Airlines? Well, you must be familiar with the airline&rsquo;s baggage policy to avoid any last-minute travel stress. It will also help you avoid any extra fees at the airport.&nbsp;</p>
 
-        <h4>Carry-On Allowance</h4>
+        <h4 className='fs-5 fw-bold'>Carry-On Allowance</h4>
         <p>Passengers can bring carry-on baggage in the cabin. The baggage needs to be placed in the overhead bin and under the seat. You can also bring one personal item on the flight. The maximum dimensions of the carry-on bag should be 56 cm H x 36 cm L x 26 cm W or 22&rsquo;&rsquo; H x 14&rsquo;&rsquo; L x 10&rsquo;&rsquo; W. The personal item should not exceed 43 cm H x 25 cm L x 22 cm W or 17&rsquo;&rsquo; H x 10&rsquo;&rsquo; L x 9&rsquo;&rsquo; W.</p>
 
-        <h4>Checked Baggage Allowance</h4>
+        <h4 className='fs-5 fw-bold'>Checked Baggage Allowance</h4>
         <p>The airline&rsquo;s checked baggage policy depends on your origin and final destinations. You should use the baggage calculator to check the baggage allowance for your next trip. Generally, each bag can measure up to 158 cm or 62 linear inches. For oversized bags, there will be an additional fee.&nbsp;</p>
 
         <p>For more details on the Copa Airlines baggage policy, connect with the airline executives. They will clear all your doubts regarding this policy.</p>
 
-        <h3>Copa Airlines Unaccompanied Minor Rules</h3>
+         <h3 className='fs-4 fw-bold'>Copa Airlines Unaccompanied Minor Rules</h3>
         <p>Copa Airlines offers the unaccompanied minor service for kids from 5 years old to 14 years old who are flying alone. Check out the Copa Airlines unaccompanied minor policy if you are planning to send your child alone on the flight.</p>
 
         <ul>
@@ -150,7 +150,7 @@ const HomeContent = () => {
           <li >The person who comes to pick the child up at the airport must show the needed documentation.</li>
         </ul>
 
-        <h4>Copa Airlines Unaccompanied Minor Fee</h4>
+        <h4 className='fs-5 fw-bold'>Copa Airlines Unaccompanied Minor Fee</h4>
 
         <table className="w-full border-collapse text-left">
       <thead>
@@ -175,7 +175,7 @@ const HomeContent = () => {
       </tbody>
     </table>
 
-        <h3 className='my-2'>What is the Copa Airlines Pet Policy?</h3>
+        <h3 className='fs-4 fw-bold my-2' >What is the Copa Airlines Pet Policy?</h3>
         <p>Do you want to travel with your pet on the Copa Airlines flight? Check out the pet policy of Copa Airlines, and bring your adorable furry friend on the flight.</p>
 
         <ul>
@@ -191,7 +191,7 @@ const HomeContent = () => {
           <li >Pets should be odorless and harmless.</li>
         </ul>
 
-        <h4>Copa Airlines Pet Travel Fee</h4>
+        <h4 className='fs-5 fw-bold'>Copa Airlines Pet Travel Fee</h4>
         <table className="w-full border-collapse text-left">
       <tbody>
         <tr>
@@ -225,10 +225,10 @@ const HomeContent = () => {
     </table>
 
         <p>These are the one-way charges. Passengers will also have to pay applicable taxes per country. The pet travel fee is non-transferable and non-refundable.</p>
-        <h3>What is the Cheapest Day to Fly on Copa Airlines?</h3>
+         <h3 className='fs-4 fw-bold'>What is the Cheapest Day to Fly on Copa Airlines?</h3>
         <p>You can never be sure about fares when talking about air travel. However, some reliable studies have proven that Tuesdays and Wednesdays are the cheapest days to book Copa Airlines flights. This may vary depending on the season you are flying and the demand for tickets to your selected destination. You can use the following tips to ensure cheap flights with this airline.</p>
 
-        <h4>Tips to Book Cheap Copa Airlines Flights</h4>
+        <h4 className='fs-5 fw-bold'>Tips to Book Cheap Copa Airlines Flights</h4>
 
         <ul>
           <li >Book your tickets in advance to get cheap flights.</li>
@@ -240,10 +240,10 @@ const HomeContent = () => {
 
         <p>Use these tricks, and start planning your pocket-friendly journey with us now!</p>
 
-        <h3>Book With Copahighfly For Exclusive Deals Now!</h3>
+         <h3 className='fs-4 fw-bold'>Book With Copahighfly For Exclusive Deals Now!</h3>
         <p>Ready to book your next travel adventure? Connect with Copahighfly as soon as possible, and confirm your booking with no extra effort. With us, you will find exclusive travel deals to save on travel expenses. Get in touch with our agents now to seek experts' guidance. </p>
       </Container>
-
+<br />
     </div>
   )
 }

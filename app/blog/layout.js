@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "",
-  description: "",
+  title: "Our Blogs | Copahighfly",
+  description: "Read our informational blogs to get details on Copa Airlines services. Check out the policies in advance for a hassle-free experience.",
 };
 
 export default function RootLayout({ children }) {

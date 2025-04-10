@@ -42,7 +42,7 @@ const Destination = () => {
           {destinations.map(({ id, title, price, image }) => (
             <div key={id} className="col-md-4 d-flex justify-content-center">
               <div className="" >
-                <Image
+                <img
                   src={image}
                   alt={title}
                   width={800}

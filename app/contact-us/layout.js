@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "",
-  description: "",
+  title: "Contact Copahighfly | 24*7 Support",
+  description: "Need Help? Reach out to experts of Copahighfly, and seek assistance 24*7 regarding all travel-related queries.",
 };
 
 export default function RootLayout({ children }) {
