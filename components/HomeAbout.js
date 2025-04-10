@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const HomeContent = () => {
   return (
     <div>
-      <Container>
+      <Container className='my-2'>
         <Row>
           <Col md={6}>
             <p className='fw-bold'>About Copahighfly </p>

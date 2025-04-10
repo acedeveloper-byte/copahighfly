@@ -11,20 +11,35 @@ const page = () => {
       <Header />
       <Container>
         <div>
-          <h1 className='my-3 fw-bold '>  About us</h1>
+          <h1 className='my-3 fw-bold fs-2'>  About us</h1>
         </div>
-<hr />
-        <div className=''>
-          <h2>About Searchmyreservation</h2>
-          <p>Searchmyreservation.com. is the best flight booking platform that serves out spontaneous flight deal options all over the internet for loyal patrons. Our name is searchmyreservation.com, and as part of our work, we provide the most amazing discounted deals, whether they are domestic or international. Therefore, we offer the major secure applications that can be easily optimized by everyone for booking flight tickets. We at searchmyreservation.com believe that flying should be hassle-free and enjoyable limitlessly, so when you book your flight tickets, that's exactly what you got: “believe and faith during the flight booking. We manage your flights seamlessly without any complications. Thus, we at searchmyreseravtion.com believe that traveling is sightseeing, which can provide more information. Hence, we here keep in mind that every traveler could not afford expensive travel, which is why we endure cost-effective solutions, which are very appreciative steps towards humanity.
-            Therefore, know that there are lots of travel websites that deliver airline flights but do not deliver at the lowest airfare. Moreover, we do offer 24/7 customer support assistance in a cooperative way.</p>
-        </div>
+        <hr />
 
-        <h3>About Searchmyreservation</h3>
-          <p>Searchmyreservation.com. is the best flight booking platform that serves out spontaneous flight deal options all over the internet for loyal patrons. Our name is searchmyreservation.com, and as part of our work, we provide the most amazing discounted deals, whether they are domestic or international. Therefore, we offer the major secure applications that can be easily optimized by everyone for booking flight tickets. We at searchmyreservation.com believe that flying should be hassle-free and enjoyable limitlessly, so when you book your flight tickets, that's exactly what you got: “believe and faith during the flight booking. We manage your flights seamlessly without any complications. Thus, we at searchmyreseravtion.com believe that traveling is sightseeing, which can provide more information. Hence, we here keep in mind that every traveler could not afford expensive travel, which is why we endure cost-effective solutions, which are very appreciative steps towards humanity.
-            Therefore, know that there are lots of travel websites that deliver airline flights but do not deliver at the lowest airfare. Moreover, we do offer 24/7 customer support assistance in a cooperative way.</p>
-      
-      </Container>
+        <p>Copahighfly is your one-stop platform to book cheap Copa Airlines flights to your dream destination. If you are looking for ultimate travel deals for your next travel plan, we are here to help. Contact us to find ongoing travel deals and make your next Copa Airlines booking at discounted fares.&nbsp;</p>
+
+        <p>We are a third-party booking platform that is available to help you with the booking process or any other travel-related issues. We are not directly associated with Copa Airlines and don&rsquo;t even have an indirect partnership with the airline. At Copahighfly, we are here to connect you to your dream destination on budget.&nbsp;</p >
+
+        <h3 className='fs-4'>Get Exclusive Deals on Copa Flights!</h3 >
+        <p>We offer special deals and discounts so you can plan your journey in your budget. These deals will make your journey even more affordable. To find the ongoing offer on your flight booking, you should get in touch with our experts.&nbsp;</p >
+
+        <p>At Copahighfly, we will make sure that you have the journey of your dreams in your budget. Our experts will make a tailor-made plan for you that will suit not only your budget, but also your preferences. Share your priorities, and add a personal touch to your itinerary.&nbsp;</p >
+
+        <h3 className='fs-4'>Why Choose Copahighfly As Your Travel Companion?</h3 >
+        <p>Copahighfly is your perfect travel partner that guarantees to make your journey an unforgettable experience. Some reasons that make us stand out among others are-</p >
+
+        <ul>
+          <li>With us, you can make a Copa Airlines booking in just a few clicks.</li>
+          <li>We help you find exclusive deals and discounts for a budget-friendly trip.</li >
+          <li>Our experts are reachable 24*7 to assist you with all your travel-related queries.</li >
+          <li>We make sure that your data is safe and secure with us.</li >
+          <li>Copahighfly believes in 100% transparency. You will not find any hidden charges or fees.</li >
+        </ul >
+
+        <h3 className='fs-4'>Book With Copahighfly Now!</h3 >
+        <p>Get in touch with Copahighfly experts to book your tickets with no extra effort, and have an enjoyable travel experience. We will try our best to help you craft an itinerary to your requirements. Connect with us now!</p >
+    
+    <br/>
+      </Container >
       <Footer />
 
       <br />

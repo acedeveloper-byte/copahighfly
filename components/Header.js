@@ -17,17 +17,16 @@ const Header = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mx-auto">
-            <Nav.Link as={Link} href="/" className="mx-2 fw-bold">Home</Nav.Link>
-            <Nav.Link as={Link} href="/about-us" className="mx-2 fw-bold">About Us</Nav.Link>
-            <Nav.Link as={Link} href="/blog" className="mx-2 fw-bold">Blog</Nav.Link>
-            <Nav.Link as={Link} href="/destinations" className="mx-2 fw-bold">Destinations</Nav.Link>
-            <Nav.Link as={Link} href="/contact-us" className="mx-2 fw-bold">Contact Us</Nav.Link>
+            <Nav.Link as={Link} href="/" className="mx-2 fw-medium">Home</Nav.Link>
+            <Nav.Link as={Link} href="/about-us" className="mx-2 fw-medium">About Us</Nav.Link>
+            <Nav.Link as={Link} href="/blog" className="mx-2 fw-medium">Blog</Nav.Link>
+            <Nav.Link as={Link} href="/contact-us" className="mx-2 fw-medium">Contact Us</Nav.Link>
           </Nav>
 
           {/* Right-Aligned Button */}
           <div className="">
             <Link href="tel: +1" >
-              <Button variant="primary" className="fw-bold  toll-free"><FaPhoneVolume /> +1 (111) 0000 111</Button>
+              <Button variant="primary" className="  toll-free"><FaPhoneVolume /> +1 (111) 0000 111</Button>
             </Link>
           </div>
 

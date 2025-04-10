@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Disclaimer | Copahighfly",
-  description: "Discover flight options with Copahighfly, and book tickets at low fares. We are a third-party platform with no direct links to Copa Airlines.",
+  title: "",
+  description: "",
 };
 
 export default function RootLayout({ children }) {

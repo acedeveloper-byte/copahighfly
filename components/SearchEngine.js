@@ -15,7 +15,7 @@ const SearchEngine = () => {
 
     return (
         <>
-            <div style={{ position: 'relative', width: 'auto', height: '750px' }}>
+            <div style={{ position: 'relative', width: 'auto', height: '612px' }}>
                 <Image
                     src="/home-poster.png"
                     alt="Poster"
@@ -25,10 +25,10 @@ const SearchEngine = () => {
             </div>
 
             <div className='container home-text '>
-                <div className='col-md-6 '>
-                    <h1 className="text-capitalize">Book Your Next Trip For Less
+                <div className='col-md-5'>
+                    <h1 >Book Your Next Trip For Less
                     </h1>
-                    <p>Get exclusive deals on Copa flights, and fly off on a budget. At Copahighfly, we promise to connect you to your destination at discounted fares. 
+                    <p>Get exclusive deals on Copa flights, and fly off on a budget. At Copahighfly, we promise to connect you to your destination at discounted fares.
                     </p>
                 </div>
 

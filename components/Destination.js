@@ -45,7 +45,7 @@ const Destination = () => {
                 <Image
                   src={image}
                   alt={title}
-                  width={300}
+                  width={800}
                   height={400}
                   style={{ height: '300px', width: '360px !important' }}
                 />
@@ -60,7 +60,7 @@ const Destination = () => {
             </div>
           ))}
 
-          <Image src='/images/travel.png' width={800} height={500} />
+          <img src='/images/travel.png' style={{ width: 'auto !important' }} />
 
         </div>
 
