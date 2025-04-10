@@ -12,7 +12,7 @@ const HomeContent = () => {
           <Col md={6}>
             <p className='fw-bold'>About Copahighfly </p>
             
-            <h2><strong>Bring Your Travel Dream to Reality With Copahighfly</strong></h2>
+            <h2 className='fs-3 fw-bold'>Bring Your Travel Dream to Reality With Copahighfly</h2>
             <p>
               At Copahighfly, we promise to fulfil your travel dreams within your expected budget. 
               We are a third-party travel booking platform that helps you book Copa flights to your destination. 
