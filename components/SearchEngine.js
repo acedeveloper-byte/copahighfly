@@ -52,7 +52,7 @@ const SearchEngine = () => {
             >
               {type === "economy" && "Economy"}
               {type === "business" && "Business Class"}
-              {type === "fast" && "Fast Class"}
+              {type === "first" && "First Class"}
             </button>
           ))}
         </div>
