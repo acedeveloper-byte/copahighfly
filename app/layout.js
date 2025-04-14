@@ -1,7 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import 'bootstrap/dist/css/bootstrap.min.css';
-
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,16 +14,19 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Book Cheap Copa Airlines Flights | Copahighfly",
-  description: "Find exclusive deals on Copa Airlines booking, and make affordable reservations. Call Copahighfly for deals, and travel for less!",
-  robots: {
-    index: false,
-    follow: true, // set to false if you don't want search engines to follow links
-  },
+  description:
+    "Find exclusive deals on Copa Airlines booking, and make affordable reservations. Call Copahighfly for deals, and travel for less!",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <meta
+          name="google-site-verification"
+          content="pVaLl6JmQ2N5KO858MA28ltPiCr0tP-w1kRoS5ayX3Y"
+        />
+      </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {children}
       </body>

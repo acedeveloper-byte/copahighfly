@@ -39,7 +39,7 @@ const SearchEngine = () => {
             <div className="container p-4 bg-white rounded-4 shadow-sm search-form" style={{ maxWidth: '1000px' }}>
                 {/* Flight Class Tabs */}
                 <div className="d-flex justify-content-between mb-4 px-2">
-                    {["economy", "business", "fast"].map(type => (
+                    {["economy", "business", "first"].map(type => (
                         <button
                             key={type}
                             className={`btn ${flightClass === type ? "btn-primary" : "btn-light"} flex-fill mx-2`}
