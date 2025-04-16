@@ -12,7 +12,7 @@ const Header = () => {
     <Navbar expand="lg" className="navbar-bg-color">
       <Container>
         <Navbar.Brand >
-          <a href="/">  <Image src="/logo/logo.png" width={170} height={50} alt="Logo" /></a>
+          <a href="https://www.copahighfly.com/">  <Image src="/logo/logo.png" width={170} height={50} alt="Logo" /></a>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
