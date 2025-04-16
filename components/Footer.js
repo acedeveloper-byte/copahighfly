@@ -32,7 +32,8 @@ const Footer = () => {
             <h5>Contact Us</h5>
             <ul className="list-unstyled">
               <li>Email: info@copahighfly.com</li>
-              <li>Phone: +1 234 567 890</li>
+              <li>Phone: 1-855-497-3456
+              </li>
               <li>Address: New York, USA</li>
             </ul>
           </Col>

@@ -30,7 +30,7 @@ const Page = () => {
                 <FaEnvelope size={40} className="bg-dark text-white p-2 rounded-circle" />
               </div>
               <h5 className="fw-bold">Email Address</h5>
-              <p>contact@copahighfly.com</p>
+              <p> info@copahighfly.com</p>
             </div>
 
             <div className="border rounded p-4 text-center shadow-sm mt-4">
@@ -38,7 +38,8 @@ const Page = () => {
                 <FaPhoneVolume size={40} className="bg-dark text-white p-2 rounded-circle" />
               </div>
               <h5 className="fw-bold">Phone Number</h5>
-              <p>+1 (000) 000-0000</p>
+              <p>1-855-497-3456
+              </p>
             </div>
           </div>
 
