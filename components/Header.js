@@ -17,10 +17,10 @@ const Header = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto ">
-            <a href="/" className="mx-2 fw-medium text-decoration-none text-dark">Home</a>
-            <a href="/about-us" className="mx-2 fw-medium text-decoration-none text-dark">About Us</a>
-            <a href="/blog" className="mx-2 fw-medium text-decoration-none text-dark">Blog</a>
-            <a href="/contact-us" className="mx-2 fw-medium text-decoration-none text-dark">Contact Us</a>
+            <a href="/" className="mx-2 fw-medium text-decoration-none text-dark mx-2">Home</a>
+            <a href="/about-us" className="mx-2 fw-medium text-decoration-none text-dark mx-2">About Us</a>
+            <a href="/blog" className="mx-2 fw-medium text-decoration-none text-dark mx-2">Blog</a>
+            <a href="/contact-us" className="mx-2 fw-medium text-decoration-none text-dark mx-2">Contact Us</a>
 
 
           </Nav>
