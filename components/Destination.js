@@ -31,7 +31,7 @@ const Destination = () => {
     <>
       <div className='container'>
         <h2 className="destination-text text-capitalize">
-        Popular Destinations
+          Popular Destinations
 
         </h2>
 
@@ -53,7 +53,7 @@ const Destination = () => {
                   <h5 className="mb-1 fw-bold">{title}</h5>
                   <p className="text-white mb-3">Starting From : <strong>${price.toFixed(2)}</strong></p>
                   <button className="btn btn-outline-success d-flex justify-content-center align-items-center gap-2 mx-auto">
-                    Book Now <FaArrowRight />
+                    <a href="tel: 1-855-497-3456" className='text-decoration-none text-white'>Book Now <FaArrowRight /></a>
                   </button>
                 </div>
               </div>
