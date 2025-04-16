@@ -11,8 +11,8 @@ const Header = () => {
   return (
     <Navbar expand="lg" className="navbar-bg-color">
       <Container>
-        <Navbar.Brand as={Link} href="/">
-          <Image src="/logo/logo.png" width={170} height={50} alt="Logo" />
+        <Navbar.Brand >
+          <a href="/">  <Image src="/logo/logo.png" width={170} height={50} alt="Logo" /></a>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
