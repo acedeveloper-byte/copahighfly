@@ -18,11 +18,11 @@ const Page = () => {
         </div>
 
         <Row className="g-4">
-          {[1, 2, 3].map((item, index) => (
+          {[1].map((item, index) => (
             <Col key={index} md={4}>
               <Card className="h-100 shadow-sm border-0">
                 <Image
-                  src="/images/cards-blog.png"
+                  src="/images/blog-cards-poster.jpg"
                   alt="blog"
                   width={353}
                   height={180}

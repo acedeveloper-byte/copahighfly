@@ -43,9 +43,10 @@ const Footer = () => {
               <Col xs={6}>
                 <h5>Quick Links</h5>
                 <ul className="list-unstyled">
-                  <li><a href="/" className="text-white text-decoration-none">Home</a></li>
                   <li><a href="/about-us" className="text-white text-decoration-none">About us</a></li>
                   <li><a href="/contact-us" className="text-white text-decoration-none">Contact us</a></li>
+                  <li><a href="/cancellation-policy" className="text-white text-decoration-none">Cancellation Policy</a></li>
+
                 </ul>
               </Col>
               <Col xs={6}>
