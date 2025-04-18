@@ -1,8 +1,7 @@
-import React from 'react';
-import Image from 'next/image';
+import React from "react";
+import Image from "next/image";
 import { FaArrowRight } from "react-icons/fa";
-import 'bootstrap/dist/css/bootstrap.min.css';
-
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const destinations = [
   {
@@ -23,52 +22,53 @@ const destinations = [
     price: 299,
     image: "/images/boston.png",
   },
-
 ];
 
 const Destination = () => {
   return (
     <>
-      <div className='container'>
+      <div className="container">
         <h2 className="destination-text text-capitalize">
           Popular Destinations
-
         </h2>
 
-        <p className='text-center'>From hidden gems to classic destinations, we offer flight services to various destinations around the world.
+        <p className="text-center">
+          From hidden gems to classic destinations, we offer flight services to
+          various destinations around the world.
         </p>
 
         <div className=" my-5 row  justify-content-center">
           {destinations.map(({ id, title, price, image }) => (
             <div key={id} className="col-md-4 d-flex justify-content-center">
-              <div className="" >
+              <div className="">
                 <img
                   src={image}
                   alt={title}
                   width={800}
                   height={400}
-                  style={{ height: '300px', width: '360px !important' }}
+                  style={{ height: "300px", width: "360px !important" }}
                 />
                 <div className="text-center p-3 cards-text-dest">
                   <h5 className="mb-1 fw-bold">{title}</h5>
-                  <p className="text-white mb-3">Starting From : <strong>${price.toFixed(2)}</strong></p>
+                  <p className="text-white mb-3">
+                    Starting From : <strong>${price.toFixed(2)}</strong>
+                  </p>
                   <button className="btn btn-outline-success d-flex justify-content-center align-items-center gap-2 mx-auto">
-                    <a href="tel: 1-855-497-3456" className='text-decoration-none text-white'>Book Now <FaArrowRight /></a>
+                    <a
+                      href="tel: 1-855-497-3456"
+                      className="text-decoration-none text-white"
+                    >
+                      Book Now <FaArrowRight />
+                    </a>
                   </button>
                 </div>
               </div>
             </div>
           ))}
 
-          <img src='/images/travel.png' style={{ width: 'auto !important' }} />
-
+          <img src="/images/travel.png" style={{ width: "auto !important" }} />
         </div>
-
-
-
-
       </div>
-
     </>
   );
 };
