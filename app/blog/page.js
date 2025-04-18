@@ -23,7 +23,7 @@ const Page = () => {
             <Col key={index} md={4}>
               <Card className="h-100 shadow-sm border-0">
                 <Image
-                  src="/images/blog-cards-poster.jpg"
+                  src="/images/blog-images/blog.png"
                   alt="blog"
                   width={353}
                   height={180}
