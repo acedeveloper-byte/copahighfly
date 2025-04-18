@@ -1,10 +1,11 @@
-'use client'
-import React from 'react'
-import Footer from '@/components/Footer'
-import Header from '@/components/Header'
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container, Row, Card, Col } from 'react-bootstrap';
-import Image from 'next/image';
+"use client";
+import React from "react";
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Container, Row, Card, Col } from "react-bootstrap";
+import Image from "next/image";
+import Link from "next/link";
 
 const Page = () => {
   return (
@@ -29,10 +30,19 @@ const Page = () => {
                   className="card-img-top"
                 />
                 <Card.Body>
-                  <Card.Title className="fw-bold">Airlines</Card.Title>
-                  <Card.Text>
-                    American Airlines extends its service to lesser-visited islands.
-                  </Card.Text>
+                  <Link
+                    href="/blog/what-is-the-copa-airlines-cancellation-policy"
+                    className="text-decoration-none text-dark"
+                  >
+                    <Card.Title className="fw-bold">
+                      Copa Airlines Cancellation Policy 2025
+                    </Card.Title>
+                    <Card.Text>
+                      Learn about the Copa Airlines cancellation policy, fees,
+                      and process to cancel your flights. Cancel at “My Trips,”
+                      and request your refund easily!{" "}
+                    </Card.Text>
+                  </Link>
                 </Card.Body>
               </Card>
             </Col>
@@ -43,6 +53,6 @@ const Page = () => {
       <Footer />
     </>
   );
-}
+};
 
-export default Page
+export default Page;
