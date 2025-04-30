@@ -9,7 +9,7 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }) {
   const { slug } = params;
-    console.log("slug:" ,slug)
+  console.log("slug:", slug)
   const matchedPost = json.find((item) => item.slug === slug);
 
   if (!matchedPost) {
@@ -36,11 +36,11 @@ export default function CancellationPolicySlugPage({ params }) {
 
 
       {json.filter((itex) => itex.slug === slug).map((item) => {
-        return(
+        return (
           <>
             <div>
               <h1 className="my-3 fw-bold fs-2 text-center">
-             {item.title}
+                {item.title}
               </h1>
             </div>
             <hr />
@@ -48,31 +48,32 @@ export default function CancellationPolicySlugPage({ params }) {
               <Row>
                 <Col md={9}>
                   <div className="blog-image-layout" >
+          
                     <img
-                      src="/images/blog-images/blog.png"
+                      src={item.image}
                       alt="Copa Airlines Cancellation Policy" style={{ width: '100%' }}
                     />
                   </div>
                   <div dangerouslySetInnerHTML={{ __html: item.content }} />
                 </Col>
                 <Col md={3} >
-        <h3>Recent Posts</h3>
+                  <h3>Recent Posts</h3>
 
-<div className="card">
-        {json.map(( item  ,index) => (
-<>
-<img  src={item.image}/>
-<p style={{
-  padding: '14px 21px',
-  fontWeight: '400'
-}}>{item.title}</p>
+                  <div className="card">
+                    {json.map((item, index) => (
+                      <>
+                        <img src={item.image} />
+                        <p style={{
+                          padding: '14px 21px',
+                          fontWeight: '400'
+                        }}>{item.title}</p>
 
-</>
-        )
-      )}
-      </div>
-        
-      </Col>
+                      </>
+                    )
+                    )}
+                  </div>
+
+                </Col>
               </Row>
 
             </Container>
@@ -81,7 +82,7 @@ export default function CancellationPolicySlugPage({ params }) {
         )
       })}
 
-      
+
       <Footer />
     </>
   );
