@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { Container } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 
 export async function generateStaticParams() {
   return [{ slug: "what-is-the-copa-airlines-cancellation-policy" }];
@@ -30,13 +30,15 @@ export default function CancellationPolicySlugPage({ params }) {
         <hr />
 
         <Container>
-          <div className="blog-image-layout">
+          <Row>
+            <Col md={9}>
+            <div className="blog-image-layout" >
             <img
               src="/images/blog-images/blog.png"
-              alt="Copa Airlines Cancellation Policy"
+              alt="Copa Airlines Cancellation Policy" style={{width: '100%'}}
             />
           </div>
-          <p>
+          <p class="mt-4">
             Life is uncertain, and so are our travel plans because of the
             unexpected emergencies. Sometimes we may need to cancel our flights
             as no alternative is available. If you have a flight with Copa
@@ -194,11 +196,11 @@ export default function CancellationPolicySlugPage({ params }) {
           <div className="blog-image-layout">
             <img
               src="/images/blog-images/blog1.png"
-              alt="Copa Airlines Cancellation Policy"
+              alt="Copa Airlines Cancellation Policy" style={{width: '100%'}}
             />
           </div>
 
-          <h3>How can I Cancel My Copa Flight Via Call?</h3>
+          <h3 class="mt-4">How can I Cancel My Copa Flight Via Call?</h3>
           <p>
             Not able to cancel your flight online? Fret not, as you can confirm
             the cancellation by calling the airline agents. Here are the steps
@@ -338,6 +340,18 @@ export default function CancellationPolicySlugPage({ params }) {
             agent if you still have any queries regarding this cancellation
             policy.
           </p>
+            </Col>
+
+            <Col md={3} >
+            <h3>Recent Posts</h3>
+            <div className="card">
+              <p style={{    padding: '14px 21px',
+    fontWeight: '400'}}>What is the Copa Airlines Cancellation Policy?</p>
+    
+            </div>
+            </Col>
+          </Row>
+         
         </Container>
 
         <Footer />
