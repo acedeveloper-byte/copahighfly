@@ -127,11 +127,11 @@ table {
 }
 
 td, th {
-  border: 1px solid #444;
   padding: 10px;
   vertical-align: top;
   font-family: Arial, sans-serif;
   font-size: 14px;
+  border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
 }
 
 
@@ -144,6 +144,9 @@ tr:nth-child(even) {
   background-color: #fafafa;
 }
 
+
+.border {
+  border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;}
 
 
 
