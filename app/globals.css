@@ -120,5 +120,31 @@ a {
 } */
 
 
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #444;
+}
+
+td, th {
+  border: 1px solid #444;
+  padding: 10px;
+  vertical-align: top;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+
+th {
+  background-color: #f5f5f5;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+
+
 
 /* my end */
