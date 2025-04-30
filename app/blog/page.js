@@ -6,7 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Row, Card, Col } from "react-bootstrap";
 import Image from "next/image";
 import Link from "next/link";
-
+import  blog from "../../components/utils/json/blog.json"
 const Page = () => {
   return (
     <>
@@ -19,11 +19,11 @@ const Page = () => {
         </div>
 
         <Row className="g-4">
-          {[1].map((item, index) => (
+          {blog.map((item, index) => (
             <Col key={index} md={4}>
               <Card className="h-100 shadow-sm border-0">
                 <Image
-                  src="/images/blog-images/blog.png"
+                  src={item.image}
                   alt="blog"
                   width={353}
                   height={180}
@@ -31,16 +31,14 @@ const Page = () => {
                 />
                 <Card.Body>
                   <Link
-                    href="/blog/what-is-the-copa-airlines-cancellation-policy"
+                    href={`/blog/${item.slug}`}
                     className="text-decoration-none text-dark"
                   >
                     <Card.Title className="fw-bold">
-                      Copa Airlines Cancellation Policy 2025
+                    {item.title}
                     </Card.Title>
                     <Card.Text>
-                      Learn about the Copa Airlines cancellation policy, fees,
-                      and process to cancel your flights. Cancel at “My Trips,”
-                      and request your refund easily!{" "}
+                     {item.shortdescription}
                     </Card.Text>
                   </Link>
                 </Card.Body>
