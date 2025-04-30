@@ -61,14 +61,15 @@ export default function CancellationPolicySlugPage({ params }) {
 
                   <div className="card">
                     {json.map((item, index) => (
-                      <>
-                        <img src={item.image} />
+                      <a href={`/blog/${item.slug}`} className="text-decoration-none text-dark">
+                        <img src={item.image} style={{ width: '100% !important'}}/>
                         <p style={{
                           padding: '14px 21px',
-                          fontWeight: '400'
+                          fontWeight: '400',
+                        
                         }}>{item.title}</p>
 
-                      </>
+                      </a>
                     )
                     )}
                   </div>
