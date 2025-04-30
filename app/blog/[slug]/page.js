@@ -3,9 +3,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Col, Container, Row } from "react-bootstrap";
 import json from "../../../components/utils/json/blog.json"
-export async function generateStaticParams() {
-  return [{ slug: "what-is-the-copa-airlines-cancellation-policy" }];
-}
+// export async function generateStaticParams() {
+//   return [{ slug: "what-is-the-copa-airlines-cancellation-policy" }];
+// }
 
 export async function generateMetadata({ params }) {
   const { slug } = params;
