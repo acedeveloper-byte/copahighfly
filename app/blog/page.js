@@ -14,7 +14,7 @@ const Page = () => {
 
       <Container className="mt-5 mb-5">
         <div className="text-center mb-4">
-          <p className="text-primary mb-1">Latest Blogs</p>
+          <h3 className=" mb-1">Latest Blogs</h3>
       
         </div>
 
