@@ -38,8 +38,9 @@ const Page = () => {
                     {item.title}
                     </Card.Title>
                     <Card.Text>
-                     {item.shortdescription}
-                    </Card.Text>
+  {item.shortdescription?.split(' ').slice(0, 14).join(' ')}...
+</Card.Text>
+
                   </Link>
                 </Card.Body>
               </Card>
