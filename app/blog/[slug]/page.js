@@ -48,7 +48,7 @@ export default function CancellationPolicySlugPage({ params }) {
               <Row>
                 <Col md={9}>
                   <div className="blog-image-layout" >
-          
+
                     <img
                       src={item.image}
                       alt="Copa Airlines Cancellation Policy" style={{ width: '100%' }}
@@ -57,22 +57,16 @@ export default function CancellationPolicySlugPage({ params }) {
                   <div dangerouslySetInnerHTML={{ __html: item.content }} />
                 </Col>
                 <Col md={3} >
-                  <h3>Recent Posts</h3>
 
-                  <div className="card">
+                  <div className="blog-list">
+                    <h3>Recent Posts</h3>
                     {json.map((item, index) => (
-                      <a href={`/blog/${item.slug}`} className="text-decoration-none text-dark">
-                        <img src={item.image} style={{ width: '100% !important'}}/>
-                        <p style={{
-                          padding: '14px 21px',
-                          fontWeight: '400',
-                        
-                        }}>{item.title}</p>
-
+                      <a href={`/blog/${item.slug}`} className="blog-card" key={index}>
+                        <p className="blog-title">{item.title}</p>
                       </a>
-                    )
-                    )}
+                    ))}
                   </div>
+
 
                 </Col>
               </Row>
