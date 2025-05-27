@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Col, Container, Row } from "react-bootstrap";
 import { HOST, SITE_ID, URL_IMAGE } from "@/utils/static";
+import RecentPosts from "@/components/common/RecentPosts";
 
 // --- Generate metadata dynamically from API
 export async function generateMetadata({ params }) {
@@ -92,17 +93,10 @@ export default async function BlogSlugPage({ params }) {
                     style={{ width: "100%" }}
                   />
                 </div>
-                <div dangerouslySetInnerHTML={{ __html: post.blog_description }} />
+                <div dangerouslySetInnerHTML={{ __html: post.blog_description }} className="my-4"/>
               </Col>
               <Col md={3}>
-               {/* <div className="blog-list">
-                    <h3>Recent Posts</h3>
-                    {post.map((posts, index) => (
-                      <a href={`/blog/${posts.response.slug}`} className="blog-card" key={index}>
-                        <p className="blog-title">{posts.response.title_tag_h1}</p>
-                      </a>
-                    ))}
-                  </div> */}
+               <RecentPosts/>
               </Col>
             </Row>
           </Container>
