@@ -1,51 +1,54 @@
-"use client";
 import React from "react";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Container, Row, Card, Col } from "react-bootstrap";
-import Image from "next/image";
-import Link from "next/link";
-import  blog from "../../components/utils/json/blog.json"
-const Page = () => {
+import { Container, Row, Col } from "react-bootstrap";
+import { HOST, SITE_ID, URL_IMAGE } from "@/utils/static";
+
+
+
+const getData = async () => {
+  const res = await fetch(`${HOST}/blog/get-blogs-by-siteId/${SITE_ID}`, {
+    cache: "no-store", // ya revalidate: 60 if you want ISR
+  });
+  if (!res.ok) throw new Error("Failed to fetch posts");
+  return res.json();
+};
+
+const Page = async () => {
+  const data = await getData();
+  const posts = data.response || [];
+
   return (
     <>
       <Header />
 
       <Container className="mt-5 mb-5">
         <div className="text-center mb-4">
-          <h3 className=" mb-1">Latest Blogs</h3>
-      
+          <h3 className="mb-1">Latest Blogs</h3>
         </div>
 
         <Row className="g-4">
-          {blog.map((item, index) => (
-            <Col key={index} md={4}>
-              <Card className="h-100 shadow-sm border-0">
-                <Image
-                  src={item.image}
-                  alt="blog"
-                  width={353}
-                  height={180}
-                  className="card-img-top"
-                />
-                <Card.Body>
-                  <Link
-                    href={`/blog/${item.slug}`}
-                    className="text-decoration-none text-dark"
-                  >
-                    <Card.Title className="fw-bold">
-                    {item.title}
-                    </Card.Title>
-                    <Card.Text>
-  {item.shortdescription.slice(0, 85)}...
-</Card.Text>
+         {posts.map((item, index) => (
+  <Col key={index} md={4}>
+    <a href={`/blog/${item.blog_url}`} className="text-decoration-none">
+      <div className="card">
+        <img
+          src={`${URL_IMAGE}${item.blog_images}`}
+          className="card-img-top"
+          alt={item.blog_image_tag}
+        />
+        <div className="card-body">
+          <h5 className="card-title text-dark">{item.meta_title}</h5>
+          <p className="card-text">
+            {item.meta_description.slice(0, 85)}...
+          </p>
+        </div>
+      </div>
+    </a>
+  </Col>
+))}
 
-                  </Link>
-                </Card.Body>
-              </Card>
-            </Col>
-          ))}
         </Row>
       </Container>
 

@@ -2,86 +2,119 @@ import React from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Col, Container, Row } from "react-bootstrap";
-import json from "../../../components/utils/json/blog.json"
-// export async function generateStaticParams() {
-//   return [{ slug: "what-is-the-copa-airlines-cancellation-policy" }];
-// }
+import { HOST, SITE_ID, URL_IMAGE } from "@/utils/static";
 
+// --- Generate metadata dynamically from API
 export async function generateMetadata({ params }) {
   const { slug } = params;
-  console.log("slug:", slug)
-  const matchedPost = json.find((item) => item.slug === slug);
+  const url = `${HOST}/blog/get-blog-by-urland-site/${SITE_ID}/${slug}`;
 
-  if (!matchedPost) {
+  try {
+    console.log("Generating metadata for slug:", slug);
+
+    const res = await fetch(url, { cache: "no-store" }); // Fresh fetch every time
+
+    if (!res.ok) {
+      const errorMsg = await res.text();
+      console.error("Metadata fetch failed:", res.status, errorMsg);
+      throw new Error("Metadata response not OK");
+    }
+
+    const matchedPost = await res.json();
+
+    if (!matchedPost || !matchedPost.response) {
+      console.warn("Metadata missing for slug:", slug);
+      return {
+        title: "Page Not Found",
+        description: "The blog you are looking for does not exist.",
+      };
+    }
+
     return {
-      title: "Page Not Found",
-      description: "The blog you are looking for does not exist.",
+      title: matchedPost.response.meta_title || "Blog",
+      description: matchedPost.response.meta_description || "Read this blog post.",
+    };
+  } catch (error) {
+    console.error("Metadata fetch error:", error);
+    return {
+      title: "Error Loading Page",
+      description: "There was an error loading this page.",
     };
   }
-
-  return {
-    title: matchedPost.metaTitle || "Blog",
-    description: matchedPost.metaDescription || "Read this blog post.",
-  };
 }
 
-export default function CancellationPolicySlugPage({ params }) {
+// --- Helper to fetch blog post data
+const getPostData = async (slug) => {
+  const url = `${HOST}/blog/get-blog-by-urland-site/${SITE_ID}/${slug}`;
+
+  try {
+    const res = await fetch(url, {
+      next: { revalidate: 60 }, // ISR (incremental static regeneration)
+    });
+
+    if (!res.ok) {
+      const errorText = await res.text();
+      console.error("Blog fetch failed:", res.status, errorText);
+      throw new Error("Failed to fetch blog post");
+    }
+
+    return res.json();
+  } catch (error) {
+    console.error("Error fetching blog data:", error);
+    throw error;
+  }
+};
+
+
+
+// --- Main Page Component
+export default async function BlogSlugPage({ params }) {
   const { slug } = params;
-
-  // Match content based on slug
-
+  const postfetch  =await  getPostData(slug) 
+  const post  =  postfetch.response
   return (
     <>
       <Header />
 
-
-      {json.filter((itex) => itex.slug === slug).map((item) => {
-        return (
-          <>
-            <div>
-              <h1 className="my-3 fw-bold fs-2 text-center">
-                {item.title}
-              </h1>
-            </div>
-            <hr />
-            <Container>
-              <Row>
-                <Col md={9}>
-                  <div className="blog-image-layout" >
-
-                    <img
-                      src={item.image}
-                      alt="Copa Airlines Cancellation Policy" style={{ width: '100%' }}
-                    />
-                  </div>
-                  <div dangerouslySetInnerHTML={{ __html: item.content }} />
-                </Col>
-                <Col md={3} >
-
-                  <div className="blog-list">
+      {post ? (
+        <>
+          <div>
+            <h1 className="my-3 fw-bold fs-2 text-center">{post.title_tag_h1}</h1>
+          </div>
+          <hr />
+          <Container>
+            <Row>
+              <Col md={9}>
+                <div className="blog-image-layout">
+                  <img
+                    src={`${URL_IMAGE}${post.blog_images}`}
+                    alt={post.title_tag_h1}
+                    style={{ width: "100%" }}
+                  />
+                </div>
+                <div dangerouslySetInnerHTML={{ __html: post.blog_description }} />
+              </Col>
+              <Col md={3}>
+               {/* <div className="blog-list">
                     <h3>Recent Posts</h3>
-                    {json.map((item, index) => (
-                      <a href={`/blog/${item.slug}`} className="blog-card" key={index}>
-                        <p className="blog-title">{item.title}</p>
+                    {post.map((posts, index) => (
+                      <a href={`/blog/${posts.response.slug}`} className="blog-card" key={index}>
+                        <p className="blog-title">{posts.response.title_tag_h1}</p>
                       </a>
                     ))}
-                  </div>
-
-
-                </Col>
-              </Row>
-
-            </Container>
-
-          </>
-        )
-      })}
-
+                  </div> */}
+              </Col>
+            </Row>
+          </Container>
+        </>
+      ) : (
+        <Container className="text-center py-5">
+          <h2>Post Not Found</h2>
+          <p>The blog post may have been removed or the slug is invalid.</p>
+        </Container>
+      )}
 
       <Footer />
     </>
   );
-
-
-
 }
