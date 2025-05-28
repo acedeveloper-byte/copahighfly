@@ -41,7 +41,7 @@ const Page = async () => {
         <div className="card-body">
           <h5 className="card-title text-dark">{item.meta_title}</h5>
           <p className="card-text">
-            {item.meta_description.slice(0, 85)}...
+            {item.meta_description.slice(0, 85)}
           </p>
         </div>
       </div>
